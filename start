@@ -6,6 +6,13 @@ function print_logo() {
 	echo -e "          TabLiqGar"
 	echo -e "\n\e[36m"
 }
+function auto() {
+COUNTER=1
+while(true) do
+ ./run.sh login
+let COUNTER=COUNTER+1 
+done
+}
 
 if [ ! -f ./tg ]; then
     echo "tg not found"
